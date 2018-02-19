@@ -48,7 +48,7 @@ public class flamegame
 			  System.out.println("the number is : " +d);
 			  //int n=-1,l=0,p=0;
 			  StringBuffer s5=new StringBuffer("flames");
-			  StringBuffer s6=new StringBuffer();
+			  //StringBuffer s6=new StringBuffer();
 
 		label1:	for(int i=0;i<5;i++)
 				{int n=-1,l=0,p=0;
@@ -64,10 +64,11 @@ public class flamegame
 							{
 							s5.deleteCharAt(p);
 							//String s6=new String();
-							s6=s5.substring(p,s5.length());
+						String s6=s5.substring(p,s5.length());
 							////System.out.println(s4);
-							s6.delete(p,s5.length());
+							//s6.delete(p,s5.length());
 							////System.out.println(s3);
+						
 							s5.insert(0,s6);
 							////System.out.println(s3);
 							break;
@@ -84,8 +85,7 @@ public class flamegame
 						if(l==d)
 							{
 							s5.deleteCharAt(n);
-
-							s6=s5.substring(n,s5.length());
+							s6=s5.substring(n,s5.length());//strings7=(String)s6;
 							////System.out.println(s4);
 							s5.delete(n,s5.length());
 					    	////System.out.println(s3);
